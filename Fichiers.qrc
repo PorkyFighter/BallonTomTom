@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/images">
+        <file alias="ballon.png">Images/ballon.png</file>
+        <file alias="etoiles.png">Images/etoiles.png</file>
+        <file alias="fond_800-600.png">Images/fond_800-600.png</file>
+        <file alias="lunar_module.png">Images/lunar_module.png</file>
+        <file alias="nuc_logo.png">Images/nuc_logo.png</file>
+        <file alias="terre.png">Images/terre.png</file>
+    </qresource>
+</RCC>

@@ -1,5 +1,4 @@
 #include "fenetreprincipale.h"
-#include "myscene.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])

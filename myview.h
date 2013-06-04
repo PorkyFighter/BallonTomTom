@@ -16,11 +16,11 @@ public:
 protected:
     virtual void resizeEvent (QResizeEvent * event) {
         this->fitInView(sceneRect());
+        event->isAccepted(); //Inutile, juste pour enlever les warnings
     }
     void mouseMoveEvent(QMouseEvent * event){
         extern int xTete;
-        if(event->x() <= 750 && event->x() >= 20) xTete = (event->x());
-        //qDebug() << QString("xTete:%1").arg(xTete);
+        if(event->x() <= 680 && event->x() >= 0) xTete = (event->x());
     }
 };
 

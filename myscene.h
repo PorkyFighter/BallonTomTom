@@ -36,8 +36,19 @@ public:
     void changementBallon(QString filename);
     void changementPersonnage(QString filename);
 
+
+
 public slots:
     void update();
+    void changementVitesse(int);
+    void changementTailleBallon(int);
+
+
+signals:
+    void setLabelActuel(QString);
+    void setLabelDernier(QString);
+    void setLabelRecord(QString);
+
 
 protected:
        void keyPressEvent(QKeyEvent *event);
@@ -46,9 +57,11 @@ protected:
 private:
        QPixmap pixbackground;
        QGraphicsPixmapItem * ballon;
-       QTimer * timer;
        QGraphicsPixmapItem * tete;
+       QGraphicsPixmapItem *fond;
+       QGraphicsPixmapItem *terre;
        QKeyEvent * touche;
+       QTimer * timer;
 };
 
 #endif // MYSCENE_H

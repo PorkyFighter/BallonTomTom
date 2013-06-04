@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2013-02-14T14:43:05
+# Project created by QtCreator 2013-02-21T22:01:23
 #
 #-------------------------------------------------
 
@@ -8,7 +8,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = tp_6
+TARGET = LunarModuleDefender
 TEMPLATE = app
 
 
@@ -17,6 +17,10 @@ SOURCES += main.cpp\
     myscene.cpp
 
 HEADERS  += fenetreprincipale.h \
-    myscene.h \
-    myview.h
+    myview.h \
+    myscene.h
 
+FORMS    += fenetreprincipale.ui
+
+RESOURCES += \
+    Fichiers.qrc
